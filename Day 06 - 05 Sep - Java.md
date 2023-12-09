@@ -1,6 +1,4 @@
-# Day 06 - 05 Sep
-
-## Control Flow Statement in Java
+# Day 06 - 05 Sep - Control Flow Statement
 
 Control flow statements in Java are constructs that determine the order in which the instructions within a program are executed. They allow you to control the flow of your program's logic based on conditions and loops. Java provides three types of control flow statements:
 

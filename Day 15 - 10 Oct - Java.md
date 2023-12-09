@@ -1,6 +1,5 @@
-# Day 15 - 10 Oct
+# Day 15 - 10 Oct - Exception Handling start
 
-## Java Exception Handling
 
 Exception handling is an important concept in Java that allows you to gracefully handle runtime errors, also known as exceptions, in your java code. It ensures that your program doesn't crash when an unexpected error occurs and provides a mechanism to recover from these errors. Let's dive into the details of exception handling in Java with examples.
 

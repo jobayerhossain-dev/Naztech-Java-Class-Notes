@@ -13,6 +13,9 @@ Java was initially developed by Sun Microsystems and released as open source sof
 
 A package can be used for grouping classes and interfaces together that share a common purpose or concern. It contains all related programs.
 
+## Hierarchy of a java program
+Package > Class > Interface or Method
+
 ## Basic Structure of All Java Program
 
 ```java
@@ -69,7 +72,7 @@ public class UserInput {
 }
 ```
 
-CommandLineArg.java: Write a program to show some text by command line arguments.
+CommandLineArg.java: Write a program to show some text by windows command prompt.
 ```java
 public class CommandLineArg {
 	public static void main(String[] args) {
@@ -78,7 +81,7 @@ public class CommandLineArg {
 }
 ```
 
-### ✍ Class Test
+### Class Test
 
 #### 10 Reserved Words of Java
 if, else, try, catch, finally, for, do, while, class, public, protected, private etc.

@@ -1,6 +1,4 @@
-# Day 20 - 07 Nov - Java
-
-## Understanding the Java Collections Framework
+# Day 20 - 07 Nov - Collections Framework
 
 ### Objective
 

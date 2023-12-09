@@ -1,9 +1,10 @@
-# Day 05 - 04 Sep
+# Day 05 - 04 Sep - Loop start
 
 ## ```for``` Loop
 
 In Java, a for loop is a control structure that allows you to execute a block of code repeatedly based on a specified condition. It's commonly used when you know in advance how many times you want to repeat a certain task. Let's break down the parts of a for loop:
 
+![For Loop Flowchart](./images/day05/For%20Loop.png "For Loop Flowchart")
 ```
 for (initialization; condition; update) {
     // Code to be executed repeatedly
@@ -20,6 +21,7 @@ Here's what each part does:
 Now, let's look at an example:
 
 ```java
+package com.example;
 for (int i = 1; i<= 5; i++) {
     System.out.println("Iteration " + i); 
 } 
@@ -44,14 +46,14 @@ The loop starts with i equal to 1. It prints "Iteration 1," increments i to 2, a
 
 You can use ```for``` loops for a wide range of tasks, such as iterating over arrays, processing data, or performing calculations. They provide precise control over the number of iterations, making them a valuable tool in Java programming.
 
-## While and Do While Loops
+## ```While``` and ```Do --- While``` Loops
 
-Let's Learn about the ```while``` and ```do```-```while``` loops in Java, providing detailed explanations and example programs. Both of these loops are essential for java developers.
+Let's we learn about ```while``` and ```do```-```while``` loops in Java, providing detailed explanations and example programs. Both of these loops are essential for java developers.
 
 ### ```while``` Loop
 
 The ```while``` loop in Java is used to repeatedly execute a block of code as long as a specified condition is true. Here's the basic structure of a ```while``` loop:
-
+![While Loop Flowchart](./images/day05/While%20Loop.png "While Loop Flowchart")
 ```
 while (condition) { 
     // Code to be executed repeatedly 
@@ -65,15 +67,20 @@ Example:
 Let's write a simple program that uses a ```while``` loop to print numbers from 1 to 5:
 
 ```java
+package com.example;
+// class block
 public class WhileLoopExample {
+    // main method block
     public static void main(String[] args) {
-        int i = 1; // Initialization 
+        // Initialization 
+        int i = 1; 
+        //while block
         while (i<= 5) { // Condition 
             System.out.println("Number: " + i); 
             i++; // Update 
-        } //while block
-    } // main method block
-} // class block
+        } 
+    } 
+} 
 ```
 
 In this program:
@@ -91,9 +98,10 @@ Number: 4
 Number: 5
 ```
 
-### ```do```-```while``` Loop
+### ```do --- while``` Loop
 The do-while loop is similar to the while loop but with a crucial difference: it guarantees that the block of code is executed at least once, even if the condition is initially false. Here's the basic structure:
 
+![Do --- While Loop Flowchart](./images/day05/Do%20While%20Loop.png "Do --- While Loop Flowchart")
 ```
 do {
     // Code to be executed repeatedly
@@ -102,39 +110,46 @@ do {
 
 > **Condition:** The condition is checked after the block of code executes. If it's _true_, the loop continues; if it's _false_, the loop terminates.
 
-Let's write a program that uses a ```do```-```while``` loop to take input from the user until they enter a positive number:
+Let's write a program that uses a ```do --- while``` loop to take input from the user until they enter a positive number:
 
 ```java
-import java.util.Scanner; 
+package com.example;
+//import scanner class
+import java.util.Scanner;
+// class block
 public class DoWhileLoopExample {
+    //main method block
     public static void main(String[] args) {
+    //create a scanner for collect user input
     Scanner scanner = new Scanner(System.in);
     int number; 
     do { 
-        System.out.print("Enter a positive number: "); 
+        System.out.print("Enter a positive number: ");
+        //collect integer type input
         number = scanner.nextInt(); 
     } while (number <= 0); 
 
     System.out.println("You entered a positive number: " + number); 
-    scanner.close(); 
+    scanner.close(); // to follow the best practice, close the scanner always.
     }
 } 
 ```
 
 In this program:
 
-- We use a ```do```-```while``` loop to repeatedly prompt the user for input.
+- We use a ```do --- while``` loop to repeatedly prompt the user for input.
 - The loop continues until the user enters a positive number (greater than 0).
 
-The ```do```-```while``` loop ensures that the input is collected at least once, making it suitable for situations where you want a guaranteed initial execution.
+The ```do --- while``` loop ensures that the input is collected at least once, making it suitable for situations where you want a guaranteed initial execution.
 
-> Both while and ```do```-```while``` loops are fundamental for controlling program flow and iteration in Java. The choice between them depends on your specific requirements.
+> Both ```while``` and ```do --- while``` loops are fundamental for controlling program flow and iteration in Java. The choice between them depends on your specific requirements.
 
 ## Foreach Loop
 
-Let’s learn about the "enhanced for loop" or "for-each loop" in Java. This loop is used for iterating over collections like arrays and lists without the need for indices. It's quite beginner-friendly and simplifies iteration.
+Let’s we learn about "enhanced for loop" or "for-each loop" in Java. This loop is used for iterating over collections like arrays and lists without the need for indices. It's quite beginner-friendly and simplifies iteration.
 Here's how it works:
 
+![For Each Loop Flowchart](./images/day05/For%20Each%20Loop.jpg "For Each Loop or Enhanced For Loop Flowchart")
 ```
 for (datatype element : collection) {
     // Code to be executed for each element
@@ -149,14 +164,19 @@ Example:
 Let's say you have an array of integers and you want to print each element:
 
 ```java
+package com.example;
+//class block
 public class ForEachLoopExample { 
+    //main method block
     public static void main(String[] args) {
+    //array declaration
     int[] numbers = {1, 2, 3, 4, 5}; 
+        //for each block
         for (int num : numbers) { 
             System.out.println("Number: " + num); 
-        } //for each block
-    } //main method block
-} //class block
+        }
+    }
+} 
 ```
 
 In this example:

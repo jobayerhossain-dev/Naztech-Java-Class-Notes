@@ -1,4 +1,4 @@
-# Day 16 - 11 Oct - Java
+# Day 16 - 11 Oct - Exception Handling end
 
 ## Throwing Exceptions
 

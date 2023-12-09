@@ -1,4 +1,4 @@
-# Day 01 - 27 Aug
+# Day 01 - 27 Aug - Basic start
 
 ## Course Overview
 
@@ -70,11 +70,11 @@ class MainProgram {
 }
 ```
 
-> _Note: Write any class, package, variable or defining any others identifiers, always should be followed by naming conventions of that programming language. According to convention of java, class name should be title case, package should be lowercase and and variable should be camelcase._
+> _Note: Write any class, package, variable or defining any others identifiers, always should be followed by naming all convention of that programming language. According to convention of java, class name should be title case, package should be lower case and and variable should be camel case._
 
 ### Hiererchical View of JVM, JRE, JDK
 
-![Hiererchical View of JVM, JRE, JDK](./images/day1/diagram.jpg "Hiererchical View of JVM, JRE, JDK")
+![Hiererchical View of JVM, JRE, JDK](./images/day01/diagram.jpg "Hiererchical View of JVM, JRE, JDK")
 
 **JVM (Java Virtual Machine):** JVM is the runtime engine that executes Java bytecode, ensuring platform independence. It interprets or compiles bytecode into native machine code for execution, handling memory and threads.
 
@@ -89,7 +89,7 @@ Semantics = Meaning and behavior of code.
 
 ### Identifiers
 
-All java classes, variables must be identified with unique names. These unique names are called identifiers. It is recommended to use descriptive names in order to create understandable and maintainable code
+All java classes, variables must be identified with unique names. These unique names are called identifiers. It is recommended to use "descriptive names" for creating "understandable and maintainable" code.
 
 ### Reserved words or keywords in Java
 
@@ -103,7 +103,7 @@ Key features of the Java programming language:
 2. **Object-Oriented:** Java follows the object-oriented programming (OOP) paradigm, allowing developers to model real-world entities as objects and create reusable and modular code.
 3. **Simple and Easy to Learn:** Java has a clean and straightforward syntax, making it relatively easy for beginners to grasp the language's concepts.
 4. **Automatic Memory Management:** Java manages memory automatically through its built-in garbage collection system, reducing the chances of memory leaks and providing memory efficiency.
-5. **Strongly Typed:** Java enforces strong type-checking during both compile-time and runtime, enhancing program reliability and reducing errors.
+5. **Strongly Typed:** Java enforces strong type-checking during both "compile-time and runtime", enhancing program reliability and reducing errors.
 6. **Platform-Independent Libraries:** Java comes with a vast standard library that provides pre-built classes and methods for various tasks, saving developers time and effort.
 7. **Multithreading:** Java supports multithreading, enabling the creation of programs that can execute multiple tasks concurrently, improving efficiency and responsiveness.
 8. **Exception Handling:** Java has a robust exception handling mechanism that helps manage and recover from runtime errors, ensuring stable and predictable program behavior.
